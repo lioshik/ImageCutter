@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCutter", "ImageCutter.csproj", "{E73C6211-0178-4423-809F-F5F6DAD89B7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E73C6211-0178-4423-809F-F5F6DAD89B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73C6211-0178-4423-809F-F5F6DAD89B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73C6211-0178-4423-809F-F5F6DAD89B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73C6211-0178-4423-809F-F5F6DAD89B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEA4EA41-ECBF-4967-9706-1E39F1E670EB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+C:\Users\Alex\source\repos\ImageCutter\bin\Release\ImageCutter.exe.config
+C:\Users\Alex\source\repos\ImageCutter\bin\Release\ImageCutter.exe
+C:\Users\Alex\source\repos\ImageCutter\bin\Release\ImageCutter.pdb
+C:\Users\Alex\source\repos\ImageCutter\obj\Release\ImageCutter.Form1.resources
+C:\Users\Alex\source\repos\ImageCutter\obj\Release\ImageCutter.Properties.Resources.resources
+C:\Users\Alex\source\repos\ImageCutter\obj\Release\ImageCutter.csproj.GenerateResource.cache
+C:\Users\Alex\source\repos\ImageCutter\obj\Release\ImageCutter.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\ImageCutter\obj\Release\ImageCutter.exe
+C:\Users\Alex\source\repos\ImageCutter\obj\Release\ImageCutter.pdb
+C:\Users\Alex\source\repos\ImageCutter\obj\Release\ImageCutter.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\ImageCutter\obj\Release\ImageCutter.FormStart.resources
