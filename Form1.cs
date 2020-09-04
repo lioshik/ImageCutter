@@ -91,14 +91,26 @@ namespace ImageCutter
                 return "Папка для сохранения не выбрана";
             }
             String subFolder = "\\";
-            if (l < path.Length)
+            if (radioButtonChooseF.Checked)
             {
-                subFolder = "\\" + path.Substring(l, path.Length - l);
+                l = textBoxFolder1.Text.Length;
+                if (l < path.Length)
+                {
+                    subFolder = "\\" + path.Substring(l, path.Length - l);
+                }
+                FileInfo f = new FileInfo(textBoxBackup.Text + subFolder);
+                Directory.CreateDirectory(f.Directory.FullName);
+                retCode = true;
+                return textBoxBackup.Text + subFolder;
+            } else
+            {
+                FileInfo f = new FileInfo(path);
+                subFolder = "\\" + f.Name;
+                Directory.CreateDirectory(new FileInfo(textBoxBackup.Text + subFolder).Directory.FullName);
+                retCode = true;
+                return textBoxBackup.Text + subFolder;
             }
-            FileInfo f = new FileInfo(textBoxBackup.Text + subFolder);
-            Directory.CreateDirectory(f.Directory.FullName);
-            retCode = true;
-            return textBoxBackup.Text + subFolder;
+            
         }
 
         private String getSavePath(String path, ref bool resCode)
@@ -110,15 +122,22 @@ namespace ImageCutter
                 res = path;
             } else
             {
-                int l = textBoxFolder2.Text.Length;
-                if (l == 0)
-                {
-                    return "Папка для сохранения не выбрана";
-                }
                 String subFolder = "\\";
-                if (l < path.Length)
+                if (radioButtonChooseF.Checked)
                 {
-                    subFolder = "\\" + path.Substring(l, path.Length - l);
+                    int l = textBoxFolder1.Text.Length;
+                    if (l == 0)
+                    {
+                        return "Папка для сохранения не выбрана";
+                    }
+                    if (l < path.Length)
+                    {
+                        subFolder = "\\" + path.Substring(l, path.Length - l);
+                    }
+                } else
+                {
+                    FileInfo fname = new FileInfo(path);
+                    subFolder = "\\" + fname.Name;
                 }
                 FileInfo f = new FileInfo(textBoxFolder2.Text + subFolder);
                 Directory.CreateDirectory(f.Directory.FullName);

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCutter", "ImageCutter.csproj", "{E73C6211-0178-4423-809F-F5F6DAD89B7B}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ImageCutterSutep", "..\ImageCutterSutep\ImageCutterSutep.vdproj", "{313F97F1-0D96-4581-91CA-67D7F2C225ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{E73C6211-0178-4423-809F-F5F6DAD89B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E73C6211-0178-4423-809F-F5F6DAD89B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E73C6211-0178-4423-809F-F5F6DAD89B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313F97F1-0D96-4581-91CA-67D7F2C225ED}.Debug|Any CPU.ActiveCfg = Debug
+		{313F97F1-0D96-4581-91CA-67D7F2C225ED}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
