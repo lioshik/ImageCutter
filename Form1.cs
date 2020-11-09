@@ -339,7 +339,7 @@ namespace ImageCutter
                         }
                         FileStream fs = new FileStream(file, FileMode.Open);
                         Bitmap res = (Bitmap)Image.FromStream(fs);
-                        res.SetResolution(1500, 1500);
+                        res.SetResolution(9000, 9000);
                         bool f = true;
                         if (checkBoxChangeFields.Checked)
                         {
@@ -469,8 +469,8 @@ namespace ImageCutter
 
         public Bitmap superImpose(Bitmap largeBmp, Bitmap smallBmp, int x, int y, bool transp = true)
         {
-            largeBmp.SetResolution(3000, 3000);
-            smallBmp.SetResolution(3000, 3000);
+            largeBmp.SetResolution(9000, 9000);
+            smallBmp.SetResolution(9000, 9000);
             Graphics g = Graphics.FromImage(largeBmp);
             g.CompositingMode = CompositingMode.SourceOver;
             //if (transp) smallBmp.MakeTransparent();
@@ -480,6 +480,7 @@ namespace ImageCutter
 
         public Bitmap alignHeight(Bitmap image, int mxW, int mxH)
         {
+            image.SetResolution(9000, 9000);
             double k = mxH / (double)image.Height;
             image = resizeImage(image, (int)(image.Width * k), (int)(image.Height * k));
             return toResolution(image, image.Height, (int)(mxW));
@@ -487,7 +488,9 @@ namespace ImageCutter
 
         public Bitmap toResolution(Bitmap image, int height, int width, bool transp = false)
         {
+            image.SetResolution(9000, 9000);
             Bitmap res = new Bitmap(width, height);
+            res.SetResolution(9000, 9000);
             if (!transp)
             {
                 for (int i = 0; i < width; i++)
@@ -528,7 +531,7 @@ namespace ImageCutter
         {
             var destRect = new Rectangle(0, 0, width, height);
             var destImage = new Bitmap(width, height);
-
+            destImage.SetResolution(9000, 9000);
             using (var graphics = Graphics.FromImage(destImage))
             {
                 graphics.CompositingMode = CompositingMode.SourceOver;
